@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite aqui, use"
+        android:inputType="textPersonName"
+        android:text="http://"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:text="Enviar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/btnInserir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:text="Inserir Contato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviar" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Tirar Foto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserir" />
+
+    <ImageView
+        android:id="@+id/ivImagem"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toEndOf="@+id/btnFoto"
+        app:layout_constraintTop_toBottomOf="@+id/btnFoto" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="24dp"
+        android:text="SALVAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPref" />
+
+    <EditText
+        android:id="@+id/editTextPref"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ESTRANGEIRO"
+        app:layout_constraintTop_toBottomOf="@+id/ivImagem"
+        tools:layout_editor_absoluteX="11dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
