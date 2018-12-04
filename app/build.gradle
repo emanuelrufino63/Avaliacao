@@ -2,12 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        config {
-            keyAlias 'MynewKey'
-            keyPassword '123456'
-            storeFile file('C:/Users/Usuario/Documents/Faculdade/Android Nativo/Avaliacao/MynewKey.jks')
-            storePassword '159755'
-        }
     }
     compileSdkVersion 26
     defaultConfig {
@@ -22,11 +16,8 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
         }
         debug {
-
-            signingConfig signingConfigs.config
         }
     }
 }
