@@ -1,97 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
- <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:ems="10"
         android:inputType="textPersonName"
-        android:text="http://"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="4dp" />
+        android:text="http://" />
 
     <Button
         android:id="@+id/btnEnviar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
-        android:text="Enviar"
-        android:layout_below="@+id/editText"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="66dp" />
+        android:layout_margin="10dp"
+        android:text="Enviar" />
 
     <Button
         android:id="@+id/btnInserir"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="119dp"
         android:text="Inserir Contato"
-        android:layout_below="@+id/btnEnviar"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="130dp" />
-
-    <Button
-        android:id="@+id/btnFoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="183dp"
-        android:text="Tirar Foto"
-        android:layout_below="@+id/btnInserir"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-   <ImageView
-       android:id="@+id/ivImagem"
-       android:layout_width="110dp"
-       android:layout_height="100dp"
-       android:layout_alignParentBottom="true"
-       android:layout_centerHorizontal="true"
-       android:layout_marginBottom="163dp"
-       android:src="@mipmap/ic_launcher"
-       android:layout_below="@+id/btnFoto"
-       tools:layout_editor_absoluteX="119dp"
-       tools:layout_editor_absoluteY="242dp" />
-
-    <Button
-        android:id="@+id/btnSalvar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="37dp"
-        android:text="SALVAR"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="439dp" />
+        android:layout_margin="10dp"/>
 
     <EditText
         android:id="@+id/editTextPref"
-        android:layout_width="362dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="106dp"
-        android:ems="10"
         android:inputType="textPersonName"
         android:text="ESTRANGEIRO"
-        tools:ignore="MissingConstraints"
+        android:layout_margin="10dp" />
 
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="370dp" />
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SALVAR"
+        android:layout_margin="10dp"/>
 
-    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCarregarArquivo"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Carregar Arquivo"
+            />
+
+        <Button
+            android:id="@+id/btnTirarFoto"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tirar Foto" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtArq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"/>
+
+
+</LinearLayout>
